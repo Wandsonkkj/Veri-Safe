@@ -17,7 +17,7 @@
         <div class="instructions fade-in">
             <h3>🔍 Como usar esta ferramenta:</h3>
             <ol>
-                <li><strong>Cole o texto</strong> da notícia que você recebeu no WhatsApp, Facebook ou outro lugar</li>
+                <li><strong>Cole o Título</strong> da notícia que você recebeu no WhatsApp, Facebook ou outro lugar</li>
                 <li><strong>Clique no botão</strong> "Verificar se é Verdade"</li>
                 <li><strong>Aguarde alguns segundos</strong> enquanto analisamos</li>
                 <li><strong>Veja o resultado</strong> e a explicação detalhada</li>
@@ -28,21 +28,21 @@
             <h2 class="section-title">
                 🔍 Verificar Notícia
             </h2>
-            <form id="newsForm">
+            <form id="newsForm" method="post" action="/verify">
+                {{ form.hidden_tag() }}
                 <div class="form-group">
-                    <label for="newsTitle">Título da Notícia (opcional)</label>
-                    <input type="text" id="newsTitle" name="newsTitle"
-                        placeholder="Ex: Vacina causa efeitos colaterais graves...">
+                    <label for="newsTitle">Título da Notícia</label>
+                    {{ form.titulo(placeholder="Ex: Vacina causa efeitos colaterais graves...", id="newsTitle") }}
                 </div>
 
-                <div class="form-group">
+                <!--<div class="form-group">
                     <label for="newsContent">📝 Cole aqui o texto da notícia que você quer verificar:</label>
                     <textarea id="newsContent" name="newsContent"
                         placeholder="Cole aqui todo o texto da notícia que você recebeu. Pode ser do WhatsApp, Facebook, ou qualquer outro lugar..."
                         required></textarea>
-                </div>
+                </div> -->
 
-                <button type="submit" class="submit-btn">🔍 Verificar se é Verdade</button>
+                {{ form.submit(class="submit-btn") }}
             </form>
 
             <div class="loading" id="loading">
@@ -55,9 +55,7 @@
             <h2 class="section-title">
                 📋 Resultado da Verificação
             </h2>
-            <div id="resultsList">
-                <!-- Resultados aparecerão aqui -->
-            </div>
+            <div id="resultsList"></div>
             <button class="clear-btn" onclick="clearResults()">🗑️ Limpar Resultados</button>
         </div>
 
@@ -84,7 +82,22 @@
         </div>
     </div>
 
-    <script src="{{url_for('static', filename='javascript/homepage.js')}}"></script>
-</body>
+    <script src="{{url_for('static', filename='js/homepage.js')}}"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const resultadoFlask = {{ resultado | tojson }};
+            const tituloFlask = {{ form.titulo.data | tojson }};
+
+            if (resultadoFlask) {
+                addResult(
+                    tituloFlask || "Notícia sem título",
+                    tituloFlask || "",
+                    resultadoFlask
+                );
+                document.getElementById('resultsSection').style.display = 'block';
+            }
+        });
+</script>
 
 </html>

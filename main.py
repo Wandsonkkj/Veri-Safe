@@ -1,5 +1,11 @@
-from app import App
+from flask import Flask
+from flask_wtf import CSRFProtect
 
+app = Flask(__name__)
+app.config.from_pyfile('app/config.py')
+csrf = CSRFProtect(app=app)
 
-if __name__ == "__main__":
-    App.run(debug=True)
+from app.views import * 
+
+if __name__ == '__main__':
+    app.run(debug=True)

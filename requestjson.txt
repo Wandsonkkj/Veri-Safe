@@ -1,0 +1,103 @@
+# Para ter essa resposta foi necessário usar a função verificar_noticia_google() na sua versão beta
+# Antes mesmo de filtrar as respostas que vinham (Isso daqui foi feito para formar justamente a mensagem de filtro)
+
+{'claims': [
+    {'text': '“Another Conspiracy Proven True!” referring to 2018 remarks by Pfizer CEO and claims about microchips in COVID-19 vaccines.', 'claimant': 'Jimmy Dore Show', 
+    'claimDate': '2022-05-21T00:00:00Z',
+    'claimReview': [
+        {'publisher': {'name': 'FactCheck.org', 'site': 'factcheck.org'}, 
+        'url': 'https://www.factcheck.org/2022/05/scicheck-pfizer-ceo-not-referencing-covid-19-vaccines-contrary-to-false-impression-in-posts-about-microchips/', 
+        'title': "FDA-Approved ‘Electronic Pill’ Isn't Evidence That COVID-19 ...", 
+        'textualRating': 'False', 
+        'languageCode': 'en'}]}, 
+
+    {'text': 'A microchip reader for pets detected a chip in the arm of a woman vaccinated against COVID-19.', 
+    'claimant': 'Viral video', 'claimDate': '2021-06-15T00:00:00Z', 
+    'claimReview': [
+        {'publisher': {'name': 'FactCheck.org', 
+        'site': 'factcheck.org'}, 
+        'url': 'https://www.factcheck.org/2021/07/scicheck-spoof-video-furthers-microchip-conspiracy-theory/', 
+        'title': 'Spoof Video Furthers Microchip Conspiracy Theory', 
+        'textualRating': 'False', 
+        'languageCode': 'en'}]}, 
+
+    {'text': 'COVID-19 vaccines contain microchips or other tracking devices, cause magnetic reaction', 
+    'claimant': 'Social media users', 'claimDate': '2021-05-10T00:00:00Z', 
+    'claimReview': 
+    [{'publisher': {'name': 'USA Today', 
+    'site': 'usatoday.com'}, 
+    'url': 'https://www.usatoday.com/story/news/factcheck/2021/05/12/fact-check-covid-19-vaccines-dont-contain-tracking-devices/5037132001/', 'title': "Fact check: COVID-19 vaccines don't contain tracking devices", 
+    'reviewDate': '2021-05-13T02:56:20Z', 
+    'textualRating': 'False', 
+    'languageCode': 'en'}]}, 
+
+    {'text': 'Video of microchip found in Pfizer vaccine', 
+    'claimant': 'Multiple resources', 
+    'claimDate': '2021-05-21T00:00:00Z', 
+    'claimReview': [
+        {'publisher': {'name': 'AFP Fact Check', 'site': 'factcheck.afp.com'}, 
+        'url': 'https://factcheck.afp.com/doc.afp.com.9EG2NX', 
+        'title': 'Hoax posts about microchips in Pfizer-BioNTech Covid-19 vaccine ...', 
+        'reviewDate': '2021-07-14T12:07:00Z', 
+        'textualRating': 'Missing context', 
+        'languageCode': 'en'}]}, 
+
+    {'text': 'Videos of magnets sticking to arms prove that the COVID-19 vaccines contain microchips.', 
+    'claimant': 'Social media posts', 'claimDate': '2021-05-12T00:00:00Z', 
+    'claimReview': [
+        {'publisher': {'name': 'FactCheck.org', 'site': 'factcheck.org'}, 
+        'url': 'https://www.factcheck.org/2021/05/scicheck-magnet-videos-refuel-bogus-claim-of-vaccine-microchips/', 
+        'title': 'Magnet Videos Refuel Bogus Claim of Vaccine Microchips', 
+        'textualRating': 'False', 
+        'languageCode': 'en'}]}, 
+
+    {'text': 'New microchip technology could fit inside a vaccine needle', 
+    'claimant': 'Social media users', 
+    'claimDate': '2021-05-17T00:00:00Z', 
+    'claimReview': [
+        {'publisher': {'name': 'USA Today', 'site': 'usatoday.com'}, 
+        'url': 'https://www.usatoday.com/story/news/factcheck/2021/05/26/fact-check-missing-context-posts-new-microchip-development/5232378001/', 'title': 'Fact check: Missing context posts on a new microchip development', 
+        'reviewDate': '2021-05-26T23:50:28Z', 
+        'textualRating': 'Missing Context', 
+        'languageCode': 'en'}]}, 
+
+    {'text': '"A new report from \'60 Minutes\' includes an interview with a scientist from the Pentagon who says that there is now a COVID microchip."', 
+    'claimant': 'Ben Swann', 
+    'claimDate': '2021-04-13T00:00:00Z',
+     'claimReview': [
+        {'publisher': {'name': 'FactCheck.org', 'site': 'factcheck.org'}, 
+        'url': 'https://www.factcheck.org/2021/08/scicheck-health-sensors-misconstrued-as-government-tracking-microchips/', 
+        'title': "Health Sensors Misconstrued as Government Tracking 'Microchips'", 
+        'textualRating': 'False', 
+        'languageCode': 'en'}]}, 
+
+    {'text': 'A video appears to show a phone detecting a new “product” when placed near a man’s arm, suggesting he was implanted with an electronic device when vaccinated.', 
+    'claimReview': [
+        {'publisher': {'name': 'Full Fact', 'site': 'fullfact.org'}, 
+        'url': 'https://fullfact.org/health/phone-scan-microchip-fake/', 
+        'title': "Video of 'QR code' detected in arm is not evidence of vaccine ...", 
+        'reviewDate': '2021-08-26T00:00:00Z', 
+        'textualRating': 'Vaccines do not contain microchips. This is not evidence of microchips being contained in vaccines.', 
+        'languageCode': 'en'}]}, 
+
+    {'text': 'COVID-19 vaccines have resulted in some people becoming magnetic.', 
+    'claimant': 'social media users', 
+    'claimDate': '2021-06-09T17:43:00Z', 
+    'claimReview': [
+        {'publisher': {'name': 'AP News', 'site': 'apnews.com'}, 
+        'url': 'https://apnews.com/article/fact-checking-962624460714', 
+        'title': 'COVID-19 vaccines do not cause magnetism in bodies', 
+        'textualRating': 'False', 
+        'languageCode': 'en'}]},
+
+    {'text': 'COVID-19 vaccines have a microchip that "tracks the location of the patient."', 
+    'claimant': 'Viral video', 
+    'claimDate': '2020-12-09T00:00:00Z', 
+    'claimReview': [
+        {'publisher': {'name': 'FactCheck.org', 'site': 'factcheck.org'}, 
+        'url': 'https://www.factcheck.org/2020/12/covid-19-vaccines-dont-have-patient-tracking-devices/', 
+        'title': "COVID-19 Vaccines Don't Have Patient-Tracking Devices", 
+        'textualRating': 'False', 
+        'languageCode': 'en'}]}], 
+
+'nextPageToken': 'CAo'}
